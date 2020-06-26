@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ProjetExo"
+    }
+  },
+  "defaultProject": "ProjetExo",
+  "cli": {
+    "analytics": "5e7d463f-b298-4fff-9428-aac235554ad6"
+  }
 }
