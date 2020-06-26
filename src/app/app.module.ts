@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularSplitModule } from 'angular-split';
 
 import { AppComponent } from './app.component';
 import { PageHomeComponent } from './page-home/page-home.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    AngularSplitModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent] // quel composant on démarre
