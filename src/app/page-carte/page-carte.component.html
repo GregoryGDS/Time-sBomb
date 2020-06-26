@@ -1,0 +1,67 @@
+<div>Type Carte</div>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Nom</td>
+    </tr>
+	<tr *ngFor="let TypeDeCarte of srvTypeCarte.typeCarte">
+        <td>
+            {{ TypeDeCarte.id }}
+        </td>
+        <td>
+            {{ TypeDeCarte.nom }}
+        </td>
+    </tr>
+</table>
+<br>
+<div>Type Carte Précis</div>
+<table border="1">
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            Type
+        </td>
+        <td>
+            Nom
+        </td>
+    </tr>
+    <tr *ngFor="let TypeDeCartePrecis of srvTypeCartePrecis.typeCartePrecis">
+        <td>
+            {{ TypeDeCartePrecis.id }}
+        </td>
+        <td>
+            {{ TypeDeCartePrecis.type.nom }}
+        </td>
+        <td>
+            {{ TypeDeCartePrecis.nom }}
+        </td>
+    </tr>
+</table>
+<br>
+<div>Cartes</div>
+<table border="1">
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            Type Précis
+        </td>
+        <td>
+            Numéro Carte
+        </td>
+    </tr>
+    <tr *ngFor="let NumeroDeCarte of srvCarte.carte">
+        <td>
+            {{ NumeroDeCarte.id }}
+        </td>
+        <td>
+            {{ NumeroDeCarte.typePrecis.nom }}
+        </td>
+        <td>
+            {{ NumeroDeCarte.numero}}
+        </td>
+    </tr>
+</table>
