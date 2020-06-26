@@ -2,29 +2,15 @@
 <div class="img-container ">
 	<img  src="../assets/images/time-bomb-logo.png" alt=''/>
 </div>
-<div class="container">
-	<!-- <sp-example-title [type]="exampleEnum.SIMPLE"></sp-example-title> -->
-	<span *ngFor="let uneCarte of srvCarte.carte">
-		<!-- faire comme <td>{{ produit.prix | categoryPrix }}</td> -->
-	
-		<span *ngIf="uneCarte.typePrecis.nom == 'Sherlock' || uneCarte.typePrecis.nom == 'Moriarty'"><img src="../assets/images/time-bomb-{{uneCarte.typePrecis.nom}}-{{ uneCarte.numero }}.png"/></span>
-	
-	</span>
-	<div class="split-example ex-percent">
-		<as-split unit="pixel" [direction]="direction" (dragEnd)="dragEnd('percent', $event)" #split="asSplit">
-			<as-split-area size="30" #area1="asSplitArea">
-				<h5>Initial size: <b>30%</b></h5>
-				<span><img src="../assets/images/time-bomb-Bombe-1.png"/></span>
-				<span><img src="../assets/images/time-bomb-Cable de désamorçage-.png"/></span>
-			</as-split-area>
-			<as-split-area size="70" #area2="asSplitArea">
-				<h5>Initial size: <b>70%</b></h5>
-				<span><img src="../assets/images/time-bomb-Cable sécurisé-.png"/></span>
-				<span><img src="../assets/images/time-bomb-Verso-.png"/></span>
-			</as-split-area>
-		</as-split>
-	</div>
+
 <br>
+<span *ngFor="let uneCarte of srvCarte.carte">
+	<!-- faire comme <td>{{ produit.prix | categoryPrix }}</td> -->
 
+	<span *ngIf="uneCarte.typePrecis.nom == 'Sherlock' || uneCarte.typePrecis.nom == 'Moriarty'"><img src="../assets/images/time-bomb-{{uneCarte.typePrecis.nom}}-{{ uneCarte.numero }}.png"/></span>
 
-
+</span>
+<span><img src="../assets/images/time-bomb-Bombe-1.png"/></span>
+<span><img src="../assets/images/time-bomb-Cable de désamorçage-.png"/></span>
+<span><img src="../assets/images/time-bomb-Cable sécurisé-.png"/></span>
+<span><img src="../assets/images/time-bomb-Verso-.png"/></span>

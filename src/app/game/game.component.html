@@ -1,0 +1,24 @@
+
+<div class="container">
+    <h5>Percent mode:</h5>
+    <div class="split-example ex-percent">
+        <as-split unit="percent" [direction]="direction" (dragEnd)="dragEnd('percent', $event)" #split="asSplit">
+            <as-split-area size="50" #area1="asSplitArea">
+                <h5>Split 1</h5>
+                <p>test</p>
+            </as-split-area>
+            <as-split-area size="50" #area2="asSplitArea">
+                <h5>split 2</h5>
+                <p>test</p>
+            </as-split-area>
+            <as-split-area size="50" #area1="asSplitArea">
+                <h5>Split 3</h5>
+                <p>test</p>
+            </as-split-area>
+            <as-split-area size="50" #area2="asSplitArea">
+                <h5>split 4</h5>
+                <p>test</p>
+            </as-split-area>
+        </as-split>
+    </div>
+</div>`
